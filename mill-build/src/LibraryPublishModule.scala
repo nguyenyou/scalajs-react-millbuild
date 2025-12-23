@@ -13,7 +13,7 @@ trait LibraryPublishModule
 
   def scalaJSVersion = "1.20.1"
 
-  def publishVersion = "3.0.0+3-805c1589-SNAPSHOT"
+  def publishVersion = "3.0.0"
 
   def versionScheme = Some(VersionScheme.EarlySemVer)
 
