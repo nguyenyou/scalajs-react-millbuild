@@ -6094,9 +6094,9 @@ function $h_Lsourcecode_SourceValue() {
 $h_Lsourcecode_SourceValue.prototype = $c_Lsourcecode_SourceValue.prototype;
 /** @constructor */
 function $c_Lwww_ReactApp$() {
-  this.Lwww_ReactApp$__f_component = null;
+  this.Lwww_ReactApp$__f_another = null;
   $n_Lwww_ReactApp$ = this;
-  this.Lwww_ReactApp$__f_component = $n($m_Ljapgolly_scalajs_react_package$().Ljapgolly_scalajs_react_internal_CoreGeneralF__f_ScalaFnComponent).apply__F1__Ljapgolly_scalajs_react_CtorType$Summoner__Lsourcecode_FullName__Ljapgolly_scalajs_react_component_JsBaseComponentTemplate$ComponentWithRoot(new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((_$1) => {
+  $n($m_Ljapgolly_scalajs_react_package$().Ljapgolly_scalajs_react_internal_CoreGeneralF__f_ScalaFnComponent).apply__F1__Ljapgolly_scalajs_react_CtorType$Summoner__Lsourcecode_FullName__Ljapgolly_scalajs_react_component_JsBaseComponentTemplate$ComponentWithRoot(new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((_$1) => {
     $as_jl_Void(_$1);
     $m_Ljapgolly_scalajs_react_package$();
     var initial = new $c_sjsr_AnonFunction0_$$Lambda$92a2e254bbb9c06a0a02fc31abab59c51c18ecc1((() => 0));
@@ -6151,11 +6151,11 @@ function $c_Lwww_ReactApp$() {
             $m_Ljapgolly_scalajs_react_Reusable$();
             var this$23 = $n(count$1);
             var r = $f_Ljapgolly_scalajs_react_hooks_Hooks$UseStateF__modState__Ljapgolly_scalajs_react_Reusable(this$23);
-            var ev$4 = $n($as_F1($n(r).value__O())).apply__O__O(new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((_$2) => {
+            var ev$7 = $n($as_F1($n(r).value__O())).apply__O__O(new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((_$2) => {
               var _$2$1 = $uI(_$2);
               return ((1 + _$2$1) | 0);
             })));
-            return new $c_Ljapgolly_scalajs_react_callback_CallbackTo(((ev$4 === null) ? null : $n($as_Ljapgolly_scalajs_react_callback_CallbackTo(ev$4)).Ljapgolly_scalajs_react_callback_CallbackTo__f_trampoline));
+            return new $c_Ljapgolly_scalajs_react_callback_CallbackTo(((ev$7 === null) ? null : $n($as_Ljapgolly_scalajs_react_callback_CallbackTo(ev$7)).Ljapgolly_scalajs_react_callback_CallbackTo__f_trampoline));
           })), $m_Ljapgolly_scalajs_react_vdom_Attr$EventCallback$().Ljapgolly_scalajs_react_vdom_Attr$EventCallback$__f_defaultSync), ($m_Ljapgolly_scalajs_react_vdom_html\uff3f$less$up$(), $m_Ljapgolly_scalajs_react_vdom_VdomNode$(), new $c_Ljapgolly_scalajs_react_vdom_VdomNode$$anon$1("Click meeeeeeeeeeeeeeeee"))]));
           var $x_3 = $f_Ljapgolly_scalajs_react_vdom_TagLite__apply__T__sci_Seq__Ljapgolly_scalajs_react_vdom_TagOf(this$27, self$1, xs$1);
           var this$33 = $m_Ljapgolly_scalajs_react_vdom_HtmlTagOf$();
@@ -6187,6 +6187,97 @@ function $c_Lwww_ReactApp$() {
     var f$4 = $f_F1__andThen__F1__F1(f$3, g$1);
     return new $c_Ljapgolly_scalajs_react_component_Delayed(new $c_Ljapgolly_scalajs_react_util_Trampoline$FlatMap(ev$3, f$4));
   })), $m_Ljapgolly_scalajs_react_CtorType$Summoner$().summonN__Ljapgolly_scalajs_react_internal_Singleton__Ljapgolly_scalajs_react_CtorType$Summoner($m_Ljapgolly_scalajs_react_internal_Singleton$().Ljapgolly_scalajs_react_internal_Singleton$__f_BoxUnit), new $c_Lsourcecode_FullName("www.ReactApp.component"));
+  this.Lwww_ReactApp$__f_another = $n($m_Ljapgolly_scalajs_react_package$().Ljapgolly_scalajs_react_internal_CoreGeneralF__f_ScalaFnComponent).apply__F1__Ljapgolly_scalajs_react_CtorType$Summoner__Lsourcecode_FullName__Ljapgolly_scalajs_react_component_JsBaseComponentTemplate$ComponentWithRoot(new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((_$3) => {
+    $as_jl_Void(_$3);
+    $m_Ljapgolly_scalajs_react_package$();
+    var initial$2 = new $c_sjsr_AnonFunction0_$$Lambda$92a2e254bbb9c06a0a02fc31abab59c51c18ecc1((() => 0));
+    var a$3 = new $c_sjsr_AnonFunction0_$$Lambda$92a2e254bbb9c06a0a02fc31abab59c51c18ecc1((() => $m_Ljapgolly_scalajs_react_hooks_Hooks$UseState$().unsafeCreate__F0__Ljapgolly_scalajs_react_hooks_Hooks$UseStateF(initial$2)));
+    $m_Ljapgolly_scalajs_react_util_Trampoline$();
+    var ev$6 = new $c_Ljapgolly_scalajs_react_util_Trampoline$Delay(a$3);
+    var f$8 = new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((count$2) => {
+      var count$3 = $as_Ljapgolly_scalajs_react_hooks_Hooks$UseStateF(count$2);
+      $m_Ljapgolly_scalajs_react_package$();
+      var f$proxy6 = new $c_sjsr_AnonFunction0_$$Lambda$92a2e254bbb9c06a0a02fc31abab59c51c18ecc1((() => {
+        var $x_7 = document;
+        var this$41 = $n(count$3);
+        $x_7.title = (("You clicked " + this$41.Ljapgolly_scalajs_react_hooks_Hooks$UseStateF$$anon$2__f_raw[0]) + " times");
+      }));
+      var effect$1 = new $c_Ljapgolly_scalajs_react_callback_CallbackTo(($m_Ljapgolly_scalajs_react_util_Trampoline$(), new $c_Ljapgolly_scalajs_react_util_Trampoline$Delay(f$proxy6)));
+      var isEffectArg$1 = $m_Ljapgolly_scalajs_react_hooks_Hooks$UseEffectArg$().unit__Ljapgolly_scalajs_react_util_Effect$Dispatch__F1($m_Ljapgolly_scalajs_react_util_DefaultEffects$().Ljapgolly_scalajs_react_util_DefaultEffects$__f_Sync);
+      var a$4 = new $c_sjsr_AnonFunction0_$$Lambda$92a2e254bbb9c06a0a02fc31abab59c51c18ecc1((() => {
+        $m_Ljapgolly_scalajs_react_hooks_Hooks$UseEffect$().unsafeCreate__O__F1__V(effect$1, isEffectArg$1);
+      }));
+      $m_Ljapgolly_scalajs_react_util_Trampoline$();
+      var ev$5 = new $c_Ljapgolly_scalajs_react_util_Trampoline$Delay(a$4);
+      var f$6 = new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((x$1$2) => {
+        $as_jl_Void(x$1$2);
+        $m_Ljapgolly_scalajs_react_package$();
+        var initial$3 = new $c_sjsr_AnonFunction0_$$Lambda$92a2e254bbb9c06a0a02fc31abab59c51c18ecc1((() => "banana"));
+        var a$5 = new $c_sjsr_AnonFunction0_$$Lambda$92a2e254bbb9c06a0a02fc31abab59c51c18ecc1((() => $m_Ljapgolly_scalajs_react_hooks_Hooks$UseState$().unsafeCreate__F0__Ljapgolly_scalajs_react_hooks_Hooks$UseStateF(initial$3)));
+        $m_Ljapgolly_scalajs_react_util_Trampoline$();
+        var ev$4 = new $c_Ljapgolly_scalajs_react_util_Trampoline$Delay(a$5);
+        var f$5 = new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((fruit$2) => {
+          var fruit$3 = $as_Ljapgolly_scalajs_react_hooks_Hooks$UseStateF(fruit$2);
+          var this$70 = $m_Ljapgolly_scalajs_react_vdom_HtmlTagOf$();
+          $n($m_Ljapgolly_scalajs_react_vdom_html\uff3f$less$up$().Ljapgolly_scalajs_react_vdom_html\uff3f$less$up$__f_$less);
+          $n($m_Ljapgolly_scalajs_react_vdom_Exports$().Ljapgolly_scalajs_react_vdom_Exports__f_HtmlTagOf);
+          var self$7 = "div";
+          var $x_12 = $m_sr_ScalaRunTime$();
+          var this$56 = $m_Ljapgolly_scalajs_react_vdom_HtmlTagOf$();
+          $n($m_Ljapgolly_scalajs_react_vdom_html\uff3f$less$up$().Ljapgolly_scalajs_react_vdom_html\uff3f$less$up$__f_$less);
+          $n($m_Ljapgolly_scalajs_react_vdom_Exports$().Ljapgolly_scalajs_react_vdom_Exports__f_HtmlTagOf);
+          var self$4 = "p";
+          var $x_10 = $m_sr_ScalaRunTime$();
+          $m_Ljapgolly_scalajs_react_vdom_html\uff3f$less$up$();
+          var this$53 = $n(count$3);
+          var v$2 = (("You clicked " + this$53.Ljapgolly_scalajs_react_hooks_Hooks$UseStateF$$anon$2__f_raw[0]) + " times");
+          $m_Ljapgolly_scalajs_react_vdom_VdomNode$();
+          var xs$4 = $x_10.wrapRefArray__AO__sci_ArraySeq(new ($d_Ljapgolly_scalajs_react_vdom_TagMod.getArrayOf().constr)([new $c_Ljapgolly_scalajs_react_vdom_VdomNode$$anon$1(v$2)]));
+          var $x_11 = $f_Ljapgolly_scalajs_react_vdom_TagLite__apply__T__sci_Seq__Ljapgolly_scalajs_react_vdom_TagOf(this$56, self$4, xs$4);
+          var this$63 = $m_Ljapgolly_scalajs_react_vdom_HtmlTagOf$();
+          $n($m_Ljapgolly_scalajs_react_vdom_html\uff3f$less$up$().Ljapgolly_scalajs_react_vdom_html\uff3f$less$up$__f_$less);
+          $n($m_Ljapgolly_scalajs_react_vdom_Exports$().Ljapgolly_scalajs_react_vdom_Exports__f_HtmlTagOf);
+          var self$5 = "button";
+          var xs$5 = $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Ljapgolly_scalajs_react_vdom_TagMod.getArrayOf().constr)([$n($n($m_Ljapgolly_scalajs_react_vdom_html\uff3f$less$up$().Ljapgolly_scalajs_react_vdom_html\uff3f$less$up$__f_$up).Ljapgolly_scalajs_react_vdom_HtmlAttrAndStyles$__f_onClick).$minus$minus$greater__F0__F1__Ljapgolly_scalajs_react_vdom_TagMod(new $c_sjsr_AnonFunction0_$$Lambda$92a2e254bbb9c06a0a02fc31abab59c51c18ecc1((() => {
+            $m_Ljapgolly_scalajs_react_Reusable$();
+            var this$59 = $n(count$3);
+            var r$1 = $f_Ljapgolly_scalajs_react_hooks_Hooks$UseStateF__modState__Ljapgolly_scalajs_react_Reusable(this$59);
+            var ev$8 = $n($as_F1($n(r$1).value__O())).apply__O__O(new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((_$4) => {
+              var _$4$1 = $uI(_$4);
+              return ((1 + _$4$1) | 0);
+            })));
+            return new $c_Ljapgolly_scalajs_react_callback_CallbackTo(((ev$8 === null) ? null : $n($as_Ljapgolly_scalajs_react_callback_CallbackTo(ev$8)).Ljapgolly_scalajs_react_callback_CallbackTo__f_trampoline));
+          })), $m_Ljapgolly_scalajs_react_vdom_Attr$EventCallback$().Ljapgolly_scalajs_react_vdom_Attr$EventCallback$__f_defaultSync), ($m_Ljapgolly_scalajs_react_vdom_html\uff3f$less$up$(), $m_Ljapgolly_scalajs_react_vdom_VdomNode$(), new $c_Ljapgolly_scalajs_react_vdom_VdomNode$$anon$1("Click meeeeeeeeeeeeeeeee"))]));
+          var $x_9 = $f_Ljapgolly_scalajs_react_vdom_TagLite__apply__T__sci_Seq__Ljapgolly_scalajs_react_vdom_TagOf(this$63, self$5, xs$5);
+          var this$69 = $m_Ljapgolly_scalajs_react_vdom_HtmlTagOf$();
+          $n($m_Ljapgolly_scalajs_react_vdom_html\uff3f$less$up$().Ljapgolly_scalajs_react_vdom_html\uff3f$less$up$__f_$less);
+          $n($m_Ljapgolly_scalajs_react_vdom_Exports$().Ljapgolly_scalajs_react_vdom_Exports__f_HtmlTagOf);
+          var self$6 = "p";
+          var $x_8 = $m_sr_ScalaRunTime$();
+          $m_Ljapgolly_scalajs_react_vdom_html\uff3f$less$up$();
+          var this$66 = $n(fruit$3);
+          var v$3 = (("Your favourite fruit is a " + this$66.Ljapgolly_scalajs_react_hooks_Hooks$UseStateF$$anon$2__f_raw[0]) + "!");
+          $m_Ljapgolly_scalajs_react_vdom_VdomNode$();
+          var xs$6 = $x_8.wrapRefArray__AO__sci_ArraySeq(new ($d_Ljapgolly_scalajs_react_vdom_TagMod.getArrayOf().constr)([new $c_Ljapgolly_scalajs_react_vdom_VdomNode$$anon$1(v$3)]));
+          var xs$7 = $x_12.wrapRefArray__AO__sci_ArraySeq(new ($d_Ljapgolly_scalajs_react_vdom_TagMod.getArrayOf().constr)([$x_11, $x_9, $f_Ljapgolly_scalajs_react_vdom_TagLite__apply__T__sci_Seq__Ljapgolly_scalajs_react_vdom_TagOf(this$69, self$6, xs$6)]));
+          return $f_Ljapgolly_scalajs_react_vdom_TagLite__apply__T__sci_Seq__Ljapgolly_scalajs_react_vdom_TagOf(this$70, self$7, xs$7);
+        }));
+        return new $c_Ljapgolly_scalajs_react_component_Delayed($f_Ljapgolly_scalajs_react_util_Trampoline__map__F1__Ljapgolly_scalajs_react_util_Trampoline(ev$4, f$5));
+      }));
+      var g$2 = new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((_$1$6) => {
+        var _$1$7 = ((_$1$6 === null) ? null : $n($as_Ljapgolly_scalajs_react_component_Delayed(_$1$6)).Ljapgolly_scalajs_react_component_Delayed__f_trampoline);
+        return _$1$7;
+      }));
+      var f$7 = $f_F1__andThen__F1__F1(f$6, g$2);
+      return new $c_Ljapgolly_scalajs_react_component_Delayed(new $c_Ljapgolly_scalajs_react_util_Trampoline$FlatMap(ev$5, f$7));
+    }));
+    var g$3 = new $c_sjsr_AnonFunction1_$$Lambda$3aa60c34ef08a878abffbf4628007cc68fa3c7ab(((_$1$8) => {
+      var _$1$9 = ((_$1$8 === null) ? null : $n($as_Ljapgolly_scalajs_react_component_Delayed(_$1$8)).Ljapgolly_scalajs_react_component_Delayed__f_trampoline);
+      return _$1$9;
+    }));
+    var f$9 = $f_F1__andThen__F1__F1(f$8, g$3);
+    return new $c_Ljapgolly_scalajs_react_component_Delayed(new $c_Ljapgolly_scalajs_react_util_Trampoline$FlatMap(ev$6, f$9));
+  })), $m_Ljapgolly_scalajs_react_CtorType$Summoner$().summonN__Ljapgolly_scalajs_react_internal_Singleton__Ljapgolly_scalajs_react_CtorType$Summoner($m_Ljapgolly_scalajs_react_internal_Singleton$().Ljapgolly_scalajs_react_internal_Singleton$__f_BoxUnit), new $c_Lsourcecode_FullName("www.ReactApp.another"));
 }
 $c_Lwww_ReactApp$.prototype = new $h_O();
 $c_Lwww_ReactApp$.prototype.constructor = $c_Lwww_ReactApp$;
@@ -6216,7 +6307,7 @@ $h_Lwww_ReactApp$package$.prototype = $c_Lwww_ReactApp$package$.prototype;
 $c_Lwww_ReactApp$package$.prototype.main__V = (function() {
   var container = document.getElementById("app");
   var this$4 = $n($m_Ljapgolly_scalajs_react_ReactDOMClient$().createRoot__Lorg_scalajs_dom_NodeSelector__Ljapgolly_scalajs_react_ReactRoot(container));
-  var c = $m_Lwww_ReactApp$().Lwww_ReactApp$__f_component;
+  var c = $m_Lwww_ReactApp$().Lwww_ReactApp$__f_another;
   var node = $n($as_Ljapgolly_scalajs_react_CtorType$Nullary($n(c).ctor__Ljapgolly_scalajs_react_CtorType())).apply__O();
   var $x_1 = this$4.Ljapgolly_scalajs_react_ReactRoot__f_raw;
   var _$3 = $as_Ljapgolly_scalajs_react_component_Generic$UnmountedRaw(node);
