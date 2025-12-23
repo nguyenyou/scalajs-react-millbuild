@@ -9,7 +9,7 @@ import mill.scalalib.*
 import mill.scalanativelib.*
 import millbuild.*
 
-object `package` extends Cross[CallbackModule]("2.13.17", "3.3.4")
+object `package` extends Cross[CallbackModule]("3.3.4")
 trait CallbackModule extends LibraryPublishModule {
 
   def moduleDeps = super.moduleDeps ++ Seq(build.util())

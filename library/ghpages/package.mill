@@ -7,7 +7,7 @@ import mill.scalajslib.api.*
 import mill.scalalib.*
 import millbuild.*
 
-object `package` extends Cross[GhpagesModule]("2.13.17", "3.3.4")
+object `package` extends Cross[GhpagesModule]("3.3.4")
 trait GhpagesModule extends ScalaJSModule with LibraryBaseModule {
 
   def scalaJSVersion = "1.20.1"

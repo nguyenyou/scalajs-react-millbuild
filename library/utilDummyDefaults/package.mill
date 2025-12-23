@@ -8,7 +8,7 @@ import mill.scalajslib.api.*
 import mill.scalalib.*
 import millbuild.*
 
-object `package` extends Cross[UtilDummyDefaultsModule]("2.13.17", "3.3.4")
+object `package` extends Cross[UtilDummyDefaultsModule]("3.3.4")
 trait UtilDummyDefaultsModule extends LibraryPublishModule {
 
   def moduleDeps = super.moduleDeps ++ Seq(build.util(), build.utilFallbacks())

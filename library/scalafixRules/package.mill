@@ -5,23 +5,14 @@ import mill.javalib.*
 import mill.scalalib.*
 import millbuild.*
 
-object `package` extends Cross[ScalafixRulesModule]("2.13.17", "3.3.4")
+object `package` extends Cross[ScalafixRulesModule]("3.3.4")
 trait ScalafixRulesModule extends LibraryBaseModule {
-
-  def mvnDeps = super.mvnDeps() ++
-    (scalaVersion() match {
-      case "2.13.17" => Seq(Deps.scalafixCore)
-      case _         => Nil
-    })
 
   def artifactName = "scalafix"
 
-  // Scalafix doesn't support Scala 3, so we disable compilation for Scala 3
+  // Scalafix doesn't support Scala 3, so we disable compilation
   override def sources: T[Seq[PathRef]] = Task {
-    scalaVersion() match {
-      case "2.13.17" => super.sources()
-      case _         => Seq.empty[PathRef]
-    }
+    Seq.empty[PathRef]
   }
 
 }
