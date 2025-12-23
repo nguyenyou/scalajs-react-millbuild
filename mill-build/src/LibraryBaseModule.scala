@@ -8,7 +8,7 @@ import mill.scalalib.*
 
 trait LibraryBaseModule extends ScalaJSModule with SbtModule {
 
-  def scalaVersion = "3.3.4"
+  def scalaVersion = "3.7.4"
 
   def scalaJSVersion = "1.20.1"
 
@@ -22,10 +22,10 @@ trait LibraryBaseModule extends ScalaJSModule with SbtModule {
     "-unchecked",
     "-Wconf:msg=may.not.be.exhaustive:e",
     "-Wconf:msg=Reference.to.uninitialized.value:e",
-    "-Yno-generic-signatures",
+    "-Xno-generic-signatures",
     "-source:3.0-migration",
     "-Wconf:msg=unused:s",
-    "-Ykind-projector"
+    "-Xkind-projector"
   )
 
 }
