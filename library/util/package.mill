@@ -9,7 +9,7 @@ import mill.scalalib.*
 import mill.scalanativelib.*
 import millbuild.*
 
-object `package` extends LibraryPublishModule {
+object `package` extends LibraryBaseModule {
 
   def mvnDeps = super.mvnDeps() ++ Seq(Deps.scalajsDom)
 
