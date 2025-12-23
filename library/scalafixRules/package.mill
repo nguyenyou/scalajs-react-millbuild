@@ -5,8 +5,7 @@ import mill.javalib.*
 import mill.scalalib.*
 import millbuild.*
 
-object `package` extends Cross[ScalafixRulesModule]("3.3.4")
-trait ScalafixRulesModule extends LibraryBaseModule {
+object `package` extends LibraryBaseModule {
 
   def artifactName = "scalafix"
 

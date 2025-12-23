@@ -9,8 +9,7 @@ import mill.scalalib.*
 trait LibraryPublishModule
     extends ScalaJSModule
     with PublishModule
-    with LibraryBaseModule
-    with CrossScalaModule {
+    with LibraryBaseModule {
 
   def scalaJSVersion = "1.20.1"
 

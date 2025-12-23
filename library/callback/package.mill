@@ -9,12 +9,11 @@ import mill.scalalib.*
 import mill.scalanativelib.*
 import millbuild.*
 
-object `package` extends Cross[CallbackModule]("3.3.4")
-trait CallbackModule extends LibraryPublishModule {
+object `package` extends LibraryPublishModule {
 
-  def moduleDeps = super.moduleDeps ++ Seq(build.util())
+  def moduleDeps = super.moduleDeps ++ Seq(build.util)
 
-  def compileModuleDeps = super.compileModuleDeps ++ Seq(build.utilFallbacks())
+  def compileModuleDeps = super.compileModuleDeps ++ Seq(build.utilFallbacks)
 
   def artifactName = "callback"
 
@@ -22,38 +21,42 @@ trait CallbackModule extends LibraryPublishModule {
     "callback",
     "com.github.japgolly.scalajs-react",
     "https://github.com/japgolly/scalajs-react",
-    Seq(License(
-      "",
-      "Apache-2.0",
-      "http://opensource.org/licenses/Apache-2.0",
-      false,
-      false,
-      "repo"
-    )),
+    Seq(
+      License(
+        "",
+        "Apache-2.0",
+        "http://opensource.org/licenses/Apache-2.0",
+        false,
+        false,
+        "repo"
+      )
+    ),
     VersionControl(
       Some("https://github.com/japgolly/scalajs-react"),
       Some("scm:git:https://github.com/japgolly/scalajs-react.git"),
       Some("scm:git:git@github.com:japgolly/scalajs-react.git"),
       None
     ),
-    Seq(Developer(
-      "japgolly",
-      "David Barri",
-      "https://japgolly.github.io/japgolly/",
-      None,
-      None
-    ))
+    Seq(
+      Developer(
+        "japgolly",
+        "David Barri",
+        "https://japgolly.github.io/japgolly/",
+        None,
+        None
+      )
+    )
   )
 
-  object test extends ScalaJSTests with CrossSbtTests with TestModule.Utest {
+  object test extends ScalaJSTests with SbtTests with TestModule.Utest {
 
     def mvnDeps = super.mvnDeps() ++
       Seq(Deps.utest, Deps.testUtil, Deps.catsCore)
 
     def compileModuleDeps = super.compileModuleDeps ++
-      Seq(build.utilFallbacks())
+      Seq(build.utilFallbacks)
 
-    def runModuleDeps = super.runModuleDeps ++ Seq(build.utilFallbacks())
+    def runModuleDeps = super.runModuleDeps ++ Seq(build.utilFallbacks)
 
     def testParallelism = false
 
