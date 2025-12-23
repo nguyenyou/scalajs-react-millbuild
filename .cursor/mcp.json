@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "scalajs-react-metals": {
+      "url": "http://localhost:56546/sse"
+    }
+  }
+}

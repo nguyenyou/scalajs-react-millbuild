@@ -2,6 +2,7 @@ package ghpages
 
 import japgolly.scalajs.react._
 import japgolly.scalajs.react.extra._
+import japgolly.scalajs.react.util.DefaultEffects.Sync
 import japgolly.scalajs.react.vdom.all._
 import scala.concurrent.duration._
 import scala.scalajs.js

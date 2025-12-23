@@ -1,6 +1,7 @@
 package ghpages.secret.tests
 
 import japgolly.scalajs.react._
+import japgolly.scalajs.react.util.DefaultEffects.Sync
 import japgolly.scalajs.react.util.JsUtil
 import japgolly.scalajs.react.vdom.html_<^._
 import org.scalajs.dom.console

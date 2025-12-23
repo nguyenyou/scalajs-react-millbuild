@@ -1,0 +1,67 @@
+package build.callbackExtCatsEffect
+
+import mill.*
+import mill.javalib.*
+import mill.javalib.publish.*
+import mill.scalajslib.*
+import mill.scalajslib.api.*
+import mill.scalalib.*
+import mill.scalanativelib.*
+import millbuild.*
+
+object `package` extends Cross[CallbackExtCatsEffectModule]("2.13.17", "3.3.4")
+trait CallbackExtCatsEffectModule extends LibraryPublishModule {
+
+  def mvnDeps = super.mvnDeps() ++ Seq(Deps.catsEffect)
+
+  def moduleDeps = super.moduleDeps ++
+    Seq(build.callbackExtCats(), build.utilCatsEffect())
+
+  def artifactName = "callback-ext-cats_effect"
+
+  def pomSettings = PomSettings(
+    "callbackExtCatsEffect",
+    "com.github.japgolly.scalajs-react",
+    "https://github.com/japgolly/scalajs-react",
+    Seq(License(
+      "",
+      "Apache-2.0",
+      "http://opensource.org/licenses/Apache-2.0",
+      false,
+      false,
+      "repo"
+    )),
+    VersionControl(
+      Some("https://github.com/japgolly/scalajs-react"),
+      Some("scm:git:https://github.com/japgolly/scalajs-react.git"),
+      Some("scm:git:git@github.com:japgolly/scalajs-react.git"),
+      None
+    ),
+    Seq(Developer(
+      "japgolly",
+      "David Barri",
+      "https://japgolly.github.io/japgolly/",
+      None,
+      None
+    ))
+  )
+
+  object test
+      extends ScalaJSTests with CrossSbtTests with TestModule.ScalaTest {
+
+    def mvnDeps = super.mvnDeps() ++ Seq(
+      Deps.catsEffectLaws,
+      Deps.catsEffectTestkit,
+      Deps.catsTestkit,
+      Deps.catsTestkitScalatest,
+      Deps.disciplineScalatest,
+      Deps.scalatest
+    )
+
+    def testParallelism = false
+
+    def testSandboxWorkingDir = false
+
+  }
+
+}

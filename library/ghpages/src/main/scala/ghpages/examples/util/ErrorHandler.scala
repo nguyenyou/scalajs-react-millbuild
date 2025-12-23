@@ -1,6 +1,7 @@
 package ghpages.examples.util
 
 import japgolly.scalajs.react._
+import japgolly.scalajs.react.util.DefaultEffects.Sync
 import japgolly.scalajs.react.vdom.html_<^._
 
 object ErrorHandler {
