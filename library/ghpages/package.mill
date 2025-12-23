@@ -7,14 +7,9 @@ import mill.scalajslib.api.*
 import mill.scalalib.*
 import millbuild.*
 
-object `package` extends Cross[GhpagesModule]("3.3.4")
-trait GhpagesModule extends ScalaJSModule with LibraryBaseModule {
+object `package` extends ScalaJSModule with LibraryBaseModule {
 
   def scalaJSVersion = "1.20.1"
-
-  // Resolve conflicting inherited members
-  override def scalacPluginMvnDeps: T[Seq[Dep]] =
-    super[LibraryBaseModule].scalacPluginMvnDeps()
 
   def mvnDeps = super.mvnDeps() ++ Seq(
     Deps.fastTextEncoding,
@@ -25,21 +20,18 @@ trait GhpagesModule extends ScalaJSModule with LibraryBaseModule {
   )
 
   def moduleDeps = super.moduleDeps ++ Seq(
-    build.coreExtCatsEffect(),
-    build.coreBundleCallback(),
-    build.extra(),
-    build.extraExtMonocle3(),
-    build.ghpagesMacros()
+    build.coreExtCatsEffect,
+    build.coreBundleCallback,
+    build.extra,
+    build.extraExtMonocle3,
+    build.ghpagesMacros
   )
 
   def artifactName = "ghpages"
 
-  // ghpages doesn't have proper Scala 3 source support yet, disable for Scala 3
+  // ghpages doesn't have proper Scala 3 source support yet
   override def sources: T[Seq[PathRef]] = Task {
-    scalaVersion() match {
-      case v if v.startsWith("2") => super.sources()
-      case _                      => Seq.empty[PathRef]
-    }
+    Seq.empty[PathRef]
   }
 
 }

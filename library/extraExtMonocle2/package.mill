@@ -8,13 +8,12 @@ import mill.scalajslib.api.*
 import mill.scalalib.*
 import millbuild.*
 
-object `package` extends Cross[ExtraExtMonocle2Module]("3.3.4")
-trait ExtraExtMonocle2Module extends LibraryPublishModule {
+object `package` extends LibraryPublishModule {
 
-  def moduleDeps = super.moduleDeps ++ Seq(build.extra(), build.coreExtCats())
+  def moduleDeps = super.moduleDeps ++ Seq(build.extra, build.coreExtCats)
 
   def compileModuleDeps = super.compileModuleDeps ++
-    Seq(build.utilDummyDefaults())
+    Seq(build.utilDummyDefaults)
 
   def artifactName = "extra-ext-monocle2"
 

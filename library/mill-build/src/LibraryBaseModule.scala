@@ -3,7 +3,9 @@ package millbuild
 import mill.javalib.*
 import mill.scalalib.*
 
-trait LibraryBaseModule extends CrossScalaModule with CrossSbtModule {
+trait LibraryBaseModule extends ScalaModule with SbtModule {
+
+  def scalaVersion = "3.3.4"
 
   def scalacOptions = super.scalacOptions() ++ Seq(
     "-deprecation",
