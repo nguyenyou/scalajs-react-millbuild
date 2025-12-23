@@ -1,4 +1,4 @@
-package build.ghpagesMacros
+package build.library.ghpagesMacros
 
 import mill.*
 import mill.javalib.*

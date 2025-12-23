@@ -1,4 +1,4 @@
-package build.extraExtMonocle2
+package build.library.extraExtMonocle2
 
 import mill.*
 import mill.javalib.*
@@ -10,10 +10,11 @@ import millbuild.*
 
 object `package` extends LibraryPublishModule {
 
-  def moduleDeps = super.moduleDeps ++ Seq(build.extra, build.coreExtCats)
+  def moduleDeps =
+    super.moduleDeps ++ Seq(build.library.extra, build.library.coreExtCats)
 
   def compileModuleDeps = super.compileModuleDeps ++
-    Seq(build.utilDummyDefaults)
+    Seq(build.library.utilDummyDefaults)
 
   def artifactName = "extra-ext-monocle2"
 

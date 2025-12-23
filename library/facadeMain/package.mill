@@ -1,4 +1,4 @@
-package build.facadeMain
+package build.library.facadeMain
 
 import mill.*
 import mill.javalib.*

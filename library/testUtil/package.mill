@@ -1,4 +1,4 @@
-package build.testUtil
+package build.library.testUtil
 
 import mill.*
 import mill.javalib.*
@@ -13,10 +13,14 @@ object `package` extends LibraryPublishModule {
   def mvnDeps = super.mvnDeps() ++ Seq(Deps.testUtil)
 
   def moduleDeps = super.moduleDeps ++
-    Seq(build.facadeTest, build.testUtilMacros, build.extra)
+    Seq(
+      build.library.facadeTest,
+      build.library.testUtilMacros,
+      build.library.extra
+    )
 
   def compileModuleDeps = super.compileModuleDeps ++
-    Seq(build.utilDummyDefaults)
+    Seq(build.library.utilDummyDefaults)
 
   def artifactName = "test"
 

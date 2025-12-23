@@ -1,4 +1,4 @@
-package build.ghpages
+package build.library.ghpages
 
 import mill.*
 import mill.javalib.*
@@ -20,11 +20,11 @@ object `package` extends ScalaJSModule with LibraryBaseModule {
   )
 
   def moduleDeps = super.moduleDeps ++ Seq(
-    build.coreExtCatsEffect,
-    build.coreBundleCallback,
-    build.extra,
-    build.extraExtMonocle3,
-    build.ghpagesMacros
+    build.library.coreExtCatsEffect,
+    build.library.coreBundleCallback,
+    build.library.extra,
+    build.library.extraExtMonocle3,
+    build.library.ghpagesMacros
   )
 
   def artifactName = "ghpages"

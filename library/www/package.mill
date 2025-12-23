@@ -1,4 +1,4 @@
-package build.www
+package build.library.www
 
 import mill.*
 import mill.javalib.*
@@ -15,7 +15,7 @@ object `package` extends ScalaJSModule with LibraryBaseModule {
   def moduleSplitStyle = ModuleSplitStyle.FewestModules
 
   def moduleDeps = super.moduleDeps ++ Seq(
-    build.coreBundleCallback
+    build.library.coreBundleCallback
   )
 
   def artifactName = "www"

@@ -1,4 +1,4 @@
-package build.facadeTest
+package build.library.facadeTest
 
 import mill.*
 import mill.javalib.*
@@ -10,7 +10,7 @@ import millbuild.*
 
 object `package` extends LibraryPublishModule {
 
-  def moduleDeps = super.moduleDeps ++ Seq(build.facadeMain)
+  def moduleDeps = super.moduleDeps ++ Seq(build.library.facadeMain)
 
   def artifactName = "facade-test"
 

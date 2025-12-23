@@ -1,4 +1,4 @@
-package build.scalafixRules
+package build.library.scalafixRules
 
 import mill.*
 import mill.javalib.*

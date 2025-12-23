@@ -1,4 +1,4 @@
-package build.coreExtCats
+package build.library.coreExtCats
 
 import mill.*
 import mill.javalib.*
@@ -12,10 +12,10 @@ object `package` extends LibraryPublishModule {
 
   def mvnDeps = super.mvnDeps() ++ Seq(Deps.catsCore)
 
-  def moduleDeps = super.moduleDeps ++ Seq(build.coreGeneric)
+  def moduleDeps = super.moduleDeps ++ Seq(build.library.coreGeneric)
 
   def compileModuleDeps = super.compileModuleDeps ++
-    Seq(build.utilDummyDefaults)
+    Seq(build.library.utilDummyDefaults)
 
   def artifactName = "core-ext-cats"
 

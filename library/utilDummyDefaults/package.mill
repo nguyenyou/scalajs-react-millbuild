@@ -1,4 +1,4 @@
-package build.utilDummyDefaults
+package build.library.utilDummyDefaults
 
 import mill.*
 import mill.javalib.*
@@ -10,7 +10,8 @@ import millbuild.*
 
 object `package` extends LibraryPublishModule {
 
-  def moduleDeps = super.moduleDeps ++ Seq(build.util, build.utilFallbacks)
+  def moduleDeps =
+    super.moduleDeps ++ Seq(build.library.util, build.library.utilFallbacks)
 
   def artifactName = "util-dummy-defaults"
 

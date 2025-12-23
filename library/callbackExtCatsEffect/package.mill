@@ -1,4 +1,4 @@
-package build.callbackExtCatsEffect
+package build.library.callbackExtCatsEffect
 
 import mill.*
 import mill.javalib.*
@@ -14,7 +14,7 @@ object `package` extends LibraryPublishModule {
   def mvnDeps = super.mvnDeps() ++ Seq(Deps.catsEffect)
 
   def moduleDeps = super.moduleDeps ++
-    Seq(build.callbackExtCats, build.utilCatsEffect)
+    Seq(build.library.callbackExtCats, build.library.utilCatsEffect)
 
   def artifactName = "callback-ext-cats_effect"
 

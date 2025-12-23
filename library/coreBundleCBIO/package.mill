@@ -1,4 +1,4 @@
-package build.coreBundleCBIO
+package build.library.coreBundleCBIO
 
 import mill.*
 import mill.javalib.*
@@ -13,7 +13,11 @@ object `package` extends LibraryPublishModule {
   def mvnDeps = super.mvnDeps() ++ Seq(Deps.compileTime)
 
   def moduleDeps = super.moduleDeps ++
-    Seq(build.callback, build.coreExtCatsEffect, build.utilFallbacks)
+    Seq(
+      build.library.callback,
+      build.library.coreExtCatsEffect,
+      build.library.utilFallbacks
+    )
 
   def artifactName = "core-bundle-cb_io"
 

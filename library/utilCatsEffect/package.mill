@@ -1,4 +1,4 @@
-package build.utilCatsEffect
+package build.library.utilCatsEffect
 
 import mill.*
 import mill.javalib.*
@@ -12,7 +12,7 @@ object `package` extends LibraryPublishModule {
 
   def mvnDeps = super.mvnDeps() ++ Seq(Deps.catsEffect)
 
-  def moduleDeps = super.moduleDeps ++ Seq(build.util)
+  def moduleDeps = super.moduleDeps ++ Seq(build.library.util)
 
   def artifactName = "util-cats_effect"
 

@@ -1,4 +1,4 @@
-package build.coreGeneric
+package build.library.coreGeneric
 
 import mill.*
 import mill.javalib.*
@@ -13,10 +13,11 @@ object `package` extends LibraryPublishModule {
   def mvnDeps = super.mvnDeps() ++
     Seq(Deps.compileTime, Deps.types, Deps.sourcecode)
 
-  def moduleDeps = super.moduleDeps ++ Seq(build.facadeMain, build.util)
+  def moduleDeps =
+    super.moduleDeps ++ Seq(build.library.facadeMain, build.library.util)
 
   def compileModuleDeps = super.compileModuleDeps ++
-    Seq(build.utilDummyDefaults)
+    Seq(build.library.utilDummyDefaults)
 
   def artifactName = "core-generic"
 
