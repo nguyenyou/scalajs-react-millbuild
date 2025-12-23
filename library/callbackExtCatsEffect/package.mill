@@ -9,7 +9,7 @@ import mill.scalalib.*
 import mill.scalanativelib.*
 import millbuild.*
 
-object `package` extends Cross[CallbackExtCatsEffectModule]("2.13.17", "3.3.4")
+object `package` extends Cross[CallbackExtCatsEffectModule]("3.3.4")
 trait CallbackExtCatsEffectModule extends LibraryPublishModule {
 
   def mvnDeps = super.mvnDeps() ++ Seq(Deps.catsEffect)

@@ -8,7 +8,7 @@ import mill.scalajslib.api.*
 import mill.scalalib.*
 import millbuild.*
 
-object `package` extends Cross[UtilFallbacksModule]("2.13.17", "3.3.4")
+object `package` extends Cross[UtilFallbacksModule]("3.3.4")
 trait UtilFallbacksModule extends LibraryPublishModule {
 
   def artifactName = "util-fallbacks"

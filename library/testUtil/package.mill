@@ -8,7 +8,7 @@ import mill.scalajslib.api.*
 import mill.scalalib.*
 import millbuild.*
 
-object `package` extends Cross[TestUtilModule]("2.13.17", "3.3.4")
+object `package` extends Cross[TestUtilModule]("3.3.4")
 trait TestUtilModule extends LibraryPublishModule {
 
   def mvnDeps = super.mvnDeps() ++ Seq(Deps.testUtil)

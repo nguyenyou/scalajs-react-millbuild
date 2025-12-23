@@ -8,10 +8,8 @@ import mill.scalajslib.api.*
 import mill.scalalib.*
 import millbuild.*
 
-object `package` extends Cross[ExtraExtMonocle2Module]("2.13.17", "3.3.4")
+object `package` extends Cross[ExtraExtMonocle2Module]("3.3.4")
 trait ExtraExtMonocle2Module extends LibraryPublishModule {
-
-  def mvnDeps = super.mvnDeps() ++ Seq(Deps.monocleCore)
 
   def moduleDeps = super.moduleDeps ++ Seq(build.extra(), build.coreExtCats())
 
@@ -20,31 +18,40 @@ trait ExtraExtMonocle2Module extends LibraryPublishModule {
 
   def artifactName = "extra-ext-monocle2"
 
+  // Monocle 2.x doesn't support Scala 3, so we disable compilation
+  override def sources: T[Seq[PathRef]] = Task {
+    Seq.empty[PathRef]
+  }
+
   def pomSettings = PomSettings(
     "extraExtMonocle2",
     "com.github.japgolly.scalajs-react",
     "https://github.com/japgolly/scalajs-react",
-    Seq(License(
-      "",
-      "Apache-2.0",
-      "http://opensource.org/licenses/Apache-2.0",
-      false,
-      false,
-      "repo"
-    )),
+    Seq(
+      License(
+        "",
+        "Apache-2.0",
+        "http://opensource.org/licenses/Apache-2.0",
+        false,
+        false,
+        "repo"
+      )
+    ),
     VersionControl(
       Some("https://github.com/japgolly/scalajs-react"),
       Some("scm:git:https://github.com/japgolly/scalajs-react.git"),
       Some("scm:git:git@github.com:japgolly/scalajs-react.git"),
       None
     ),
-    Seq(Developer(
-      "japgolly",
-      "David Barri",
-      "https://japgolly.github.io/japgolly/",
-      None,
-      None
-    ))
+    Seq(
+      Developer(
+        "japgolly",
+        "David Barri",
+        "https://japgolly.github.io/japgolly/",
+        None,
+        None
+      )
+    )
   )
 
 }
