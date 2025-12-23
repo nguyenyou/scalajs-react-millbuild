@@ -6,15 +6,7 @@ import mill.scalajslib.*
 import mill.scalajslib.api.*
 import mill.scalalib.*
 
-trait LibraryPublishModule
-    extends ScalaJSModule
-    with PublishModule
-    with LibraryBaseModule {
+trait LibraryPublishModule extends ScalaJSModule with LibraryBaseModule {
 
   def scalaJSVersion = "1.20.1"
-
-  def publishVersion = "3.0.0"
-
-  def versionScheme = Some(VersionScheme.EarlySemVer)
-
 }

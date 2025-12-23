@@ -18,37 +18,6 @@ object `package` extends LibraryPublishModule {
 
   def artifactName = "callback"
 
-  def pomSettings = PomSettings(
-    "callback",
-    "com.github.japgolly.scalajs-react",
-    "https://github.com/japgolly/scalajs-react",
-    Seq(
-      License(
-        "",
-        "Apache-2.0",
-        "http://opensource.org/licenses/Apache-2.0",
-        false,
-        false,
-        "repo"
-      )
-    ),
-    VersionControl(
-      Some("https://github.com/japgolly/scalajs-react"),
-      Some("scm:git:https://github.com/japgolly/scalajs-react.git"),
-      Some("scm:git:git@github.com:japgolly/scalajs-react.git"),
-      None
-    ),
-    Seq(
-      Developer(
-        "japgolly",
-        "David Barri",
-        "https://japgolly.github.io/japgolly/",
-        None,
-        None
-      )
-    )
-  )
-
   object test extends ScalaJSTests with SbtTests with TestModule.Utest {
 
     def mvnDeps = super.mvnDeps() ++
