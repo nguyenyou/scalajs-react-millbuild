@@ -1,0 +1,51 @@
+package build.testUtil
+
+import mill.*
+import mill.javalib.*
+import mill.javalib.publish.*
+import mill.scalajslib.*
+import mill.scalajslib.api.*
+import mill.scalalib.*
+import millbuild.*
+
+object `package` extends Cross[TestUtilModule]("2.13.17", "3.3.4")
+trait TestUtilModule extends LibraryPublishModule {
+
+  def mvnDeps = super.mvnDeps() ++ Seq(Deps.testUtil)
+
+  def moduleDeps = super.moduleDeps ++
+    Seq(build.facadeTest(), build.testUtilMacros(), build.extra())
+
+  def compileModuleDeps = super.compileModuleDeps ++
+    Seq(build.utilDummyDefaults())
+
+  def artifactName = "test"
+
+  def pomSettings = PomSettings(
+    "testUtil",
+    "com.github.japgolly.scalajs-react",
+    "https://github.com/japgolly/scalajs-react",
+    Seq(License(
+      "",
+      "Apache-2.0",
+      "http://opensource.org/licenses/Apache-2.0",
+      false,
+      false,
+      "repo"
+    )),
+    VersionControl(
+      Some("https://github.com/japgolly/scalajs-react"),
+      Some("scm:git:https://github.com/japgolly/scalajs-react.git"),
+      Some("scm:git:git@github.com:japgolly/scalajs-react.git"),
+      None
+    ),
+    Seq(Developer(
+      "japgolly",
+      "David Barri",
+      "https://japgolly.github.io/japgolly/",
+      None,
+      None
+    ))
+  )
+
+}

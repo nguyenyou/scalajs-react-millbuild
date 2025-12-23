@@ -1,0 +1,29 @@
+package build.www
+
+import mill.*
+import mill.javalib.*
+import mill.scalajslib.*
+import mill.scalajslib.api.*
+import mill.scalalib.*
+import millbuild.*
+
+object `package` extends Cross[WwwModule]("2.13.17", "3.3.4")
+trait WwwModule extends ScalaJSModule with LibraryBaseModule {
+
+  def scalaJSVersion = "1.20.1"
+
+  def moduleKind = ModuleKind.ESModule
+  def moduleSplitStyle = ModuleSplitStyle.FewestModules
+
+  // Resolve conflicting inherited members
+  override def scalacPluginMvnDeps: T[Seq[Dep]] =
+    super[LibraryBaseModule].scalacPluginMvnDeps()
+
+  def moduleDeps = super.moduleDeps ++ Seq(
+    build.coreBundleCallback()
+  )
+
+  def artifactName = "www"
+
+}
+

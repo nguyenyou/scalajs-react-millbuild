@@ -4,6 +4,7 @@ import ghpages.GhPagesMacros
 import ghpages.examples.util.SingleSide
 import japgolly.scalajs.react._
 import japgolly.scalajs.react.extra._
+import japgolly.scalajs.react.util.DefaultEffects.Sync
 import japgolly.scalajs.react.vdom.html_<^._
 
 object ReuseExample {

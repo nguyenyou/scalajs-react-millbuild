@@ -56,6 +56,7 @@ object StateSnapshotExample2 {
 
   // EXAMPLE:START
   import japgolly.scalajs.react._
+  import japgolly.scalajs.react.util.DefaultEffects.Sync
   import japgolly.scalajs.react.vdom.html_<^._
   import japgolly.scalajs.react.ReactMonocle._
   import japgolly.scalajs.react.extra._

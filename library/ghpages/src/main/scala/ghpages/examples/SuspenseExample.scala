@@ -3,6 +3,7 @@ package ghpages.examples
 import ghpages.GhPagesMacros
 import ghpages.examples.util.SingleSide
 import japgolly.scalajs.react._
+import japgolly.scalajs.react.util.DefaultEffects.Async
 import japgolly.scalajs.react.vdom.html_<^._
 
 object SuspenseExample {
